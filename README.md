@@ -1,8 +1,5 @@
-<div align="center">
-  <img src="https://github.com/DEAFPS/SharpTimer/assets/43534349/c353662a-eb64-43e7-9294-40cfed3d58af" alt="" style="margin: 0;">
-  <a href='https://ko-fi.com/L3L7T5ZSB' target='_blank'><img src='https://github.com/DEAFPS/SharpTimer/assets/43534349/06a05e4d-a4aa-4ed8-b94d-4bfa2939d66f' alt='Buy Me a Coffee at ko-fi.com' style="margin: 0;"></a>
-  <a href='https://discord.gg/SmQXeyMcny' target='_blank'><img src='https://github.com/DEAFPS/SharpTimer/assets/43534349/9ecf2010-4273-420e-900c-cdd37b75ee70' alt='SharpTimer Discord' style="margin: 0;"></a>
-</div>
+> [!WARNING]  
+> This Project is discontinued. Feel free to fork it and build upon it.
 
 
 # SharpTimer
