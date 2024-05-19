@@ -148,4 +148,4 @@ SharpTimer is a "simple" Surf/KZ/Bhop/MG/Deathrun/etc. CS2 Timer plugin using Co
   - [ ] Strafe Sync Bar on HUD
 
 
-## Author: [@DEAFPS_](https://twitter.com/deafps_)
+## Author: [@dea_bb](https://twitter.com/dea_bb)
