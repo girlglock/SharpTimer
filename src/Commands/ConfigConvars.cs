@@ -401,6 +401,28 @@ namespace SharpTimer
             }
         }
 
+        [ConsoleCommand("sharptimer_command_saveloc_cooldown", "Defines the time between savelocks can be called. Default value: 0.1")]
+        [CommandHelper(whoCanExecute: CommandUsage.SERVER_ONLY)]
+        public void SharpTimerCmdSavelocCooldownConvar(CCSPlayerController? player, CommandInfo command)
+        {
+            string args = command.ArgString;
+
+
+            
+            if (float.TryParse(args, out float saveLocCooldown) && saveLocCooldown >= 0)
+            {
+                cmdsaveLocCooldown = (int)(saveLocCooldown * 64);
+                SharpTimerConPrint($"SharpTimer saveloc command cooldown set to {saveLocCooldown} seconds.");
+            }
+            else
+            {
+                SharpTimerConPrint("Invalid command savelocCooldown value. Please provide a positive float.");
+            }
+        }
+
+
+        
+
         [ConsoleCommand("sharptimer_max_bhop_block_time", "Defines the time the player is allowed to stand on a Bhop block (if the map supports it). Default value: 1")]
         [CommandHelper(whoCanExecute: CommandUsage.SERVER_ONLY)]
         public void SharpTimerBhopBlockConvar(CCSPlayerController? player, CommandInfo command)
