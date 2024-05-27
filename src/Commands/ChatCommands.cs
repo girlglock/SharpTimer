@@ -1414,8 +1414,16 @@ namespace SharpTimer
 
             if (playerTimers[player.Slot].TicksSinceLastCmd < cmdCooldown)
             {
-                player.PrintToChat(msgPrefix + $" Command is on cooldown. Chill...");
-                return;
+
+                if (playerTimers[player.Slot].TicksSinceLastCmd < cmdsaveLocCooldown)
+                {
+                    continue;
+                }
+                else{
+                    player.PrintToChat(msgPrefix + $" Saveloc is on cooldown. Chill...");
+                    return;
+                }
+                
             }
 
             if (playerTimers[player.Slot].IsReplaying)
