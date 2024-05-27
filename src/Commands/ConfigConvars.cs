@@ -401,9 +401,9 @@ namespace SharpTimer
             }
         }
 
-        [ConsoleCommand("sharptimer_command_saveloc_cooldown", "Defines the time between savelocks can be called. Default value: 0.1")]
+        [ConsoleCommand("sharptimer_command_saveloc_cooldown", "Defines the time between savelocks can be called. Default value: 0.2")]
         [CommandHelper(whoCanExecute: CommandUsage.SERVER_ONLY)]
-        public void SharpTimerCmdSavelocCooldownConvar(CCSPlayerController? player, CommandInfo command)
+        public void SharpTimercmdSavelocCooldownConvar(CCSPlayerController? player, CommandInfo command)
         {
             string args = command.ArgString;
 
@@ -411,7 +411,7 @@ namespace SharpTimer
             
             if (float.TryParse(args, out float saveLocCooldown) && saveLocCooldown >= 0)
             {
-                cmdsaveLocCooldown = (int)(saveLocCooldown * 64);
+                cmdSavelocCooldown = (int)(saveLocCooldown * 64);
                 SharpTimerConPrint($"SharpTimer saveloc command cooldown set to {saveLocCooldown} seconds.");
             }
             else

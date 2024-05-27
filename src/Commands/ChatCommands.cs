@@ -1415,9 +1415,9 @@ namespace SharpTimer
             if (playerTimers[player.Slot].TicksSinceLastCmd < cmdCooldown)
             {
 
-                if (playerTimers[player.Slot].TicksSinceLastCmd < cmdsaveLocCooldown)
+                if (playerTimers[player.Slot].TicksSinceLastCmd > cmdSavelocCooldown)
                 {
-                    continue;
+                    //Updated do nothing
                 }
                 else{
                     player.PrintToChat(msgPrefix + $" Saveloc is on cooldown. Chill...");
