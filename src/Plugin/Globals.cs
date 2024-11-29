@@ -26,7 +26,7 @@ namespace SharpTimer
         public string compileTimeStamp = new DateTime(CompileTimeStamp.CompileTime, DateTimeKind.Utc).ToString();
 
         public override string ModuleName => "SharpTimer";
-        public override string ModuleVersion => $"0.2.6 - {compileTimeStamp}";
+        public override string ModuleVersion => $"0.2.7 - {compileTimeStamp}";
         public override string ModuleAuthor => "dea https://github.com/deafps/";
         public override string ModuleDescription => "A CS2 Timer Plugin";
 
@@ -137,6 +137,7 @@ namespace SharpTimer
         public bool fovChangerEnabled = true;
         public bool triggerPushFixEnabled = false;
         public int cmdCooldown = 64;
+        public int cmdSavelocCooldown = 64;
         public float fakeTriggerHeight = 50;
         public int altVeloMaxSpeed = 3000;
         public bool forcePlayerSpeedEnabled = false;

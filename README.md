@@ -1,5 +1,11 @@
-> [!WARNING]  
-> This Project is discontinued. Feel free to fork it and build upon it.
+Plugin forked from deafps/SharpTimer
+
+I seperated the saveloc command cooldown on the config so the command for loading the loc (checkpoint) would have its own cooldown:
+
+sharptimer_command_spam_cooldown	0.5                                     // Defines the time in seconds between commands can be called. 		Default value: 0.5
+sharptimer_command_saveloc_cooldown     0.2                                     // Defines the time in seconds between saveloc can be called (loadloc). Default value: 0.2
+
+(config.cfg)
 
 
 # SharpTimer
